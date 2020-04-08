@@ -12,7 +12,7 @@ node {
    }
 stage('Mvn Package'){
 	   // Build using maven
-	   
+	   tool name: 'maven3', type: 'maven'	   
 	   bat "${mvn} clean package deploy"
    }
 }
