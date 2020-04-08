@@ -10,5 +10,10 @@ node {
 	url: 'https://github.com/javahometech/myweb'
    
    }
+stage('Mvn Package'){
+	   // Build using maven
+	   
+	   bat "${mvn} clean package deploy"
+   }
 }
 
